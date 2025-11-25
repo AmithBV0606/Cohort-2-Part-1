@@ -1,7 +1,11 @@
 # Deploying Frontend on AWS
 
+## Objects :
+
+- Every website you visit needs to send back some contents(mp4, mp3, image files).
 - All the data that is not coming from the database like html, css, js files, image files etc are called as objects.
 - These objects are usually stored in the object stores.
+- The standard practice to store these objects is object stores.
 
 ## Resources needed to deploy Frontends :
 
