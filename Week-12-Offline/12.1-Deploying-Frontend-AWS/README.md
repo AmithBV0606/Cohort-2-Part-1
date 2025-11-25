@@ -1,18 +1,19 @@
 # Deploying Frontend on AWS
 
+- All the data that is not coming from the database like html, css, js files, image files etc are called as objects.
+- These objects are usually stored in the object stores.
+
 ## Resources needed to deploy Frontends :
 
 ### S3 : Simple Storage Service(S3)
 
-    Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance.
+- Amazon S3 is an object storage service that offers industry-leading scalability, data availability, security, and performance.
 
 ### CloudFront : Content Delivery Network(CDN's)
 
-    A CDN stands for Content Delivery Network.
-
-    As the name suggests, it’s an optimal way for you to deliver content (mp4 files, jpgs and even HTML/CSS/JS files) to your users.
-
-    Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds.
+- A CDN stands for Content Delivery Network.
+- As the name suggests, it’s an optimal way for you to deliver content (mp4 files, jpgs and even HTML/CSS/JS files) to your users.
+- Amazon CloudFront is a fast content delivery network (CDN) service that securely delivers data, videos, applications, and APIs to customers globally with low latency and high transfer speeds.
 
 ### It is better than serving it from a VM/EC2 instances because of a few reasons -
 
@@ -24,9 +25,9 @@
 <img src="./assets/Pic-2.webp" />
 
 ### Conclusion : 
-    1) For frontends, mp4 files, images, Object stores  + CDNs are a better approach.
+1) For frontends, mp4 files, images, Object stores  + CDNs are a better approach.
 
-    2) You can’t use the same for backends, since every request returns a different response. Caching doesn’t make any sense there. 
+2) You can’t use the same for backends, since every request returns a different response. Caching doesn’t make any sense there. 
 
 **NOTE :** 
 
@@ -71,9 +72,8 @@ serve
 
 **STEP 6** : Creating an object store in AWS
 
-    You can create a bucket in there. 
-    
-    A bucket represents a logical place where you store all the files of a certain project.
+- You can create a bucket in there.
+- A bucket represents a logical place where you store all the files of a certain project.
 
 <img src="./assets/Pic-3.webp" />
 <img src="./assets/Pic-4.webp" />
